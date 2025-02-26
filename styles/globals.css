@@ -10,6 +10,9 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  font-weight: normal;
+  font-size: var(--default-font-size);
+  font-family: 'IBM Plex mono', sans-serif;
 }
 
 h1,
@@ -28,6 +31,7 @@ ul {
   list-style: none;
 }
 
+
 picture {
   margin: 0;
   padding: 0;
@@ -39,4 +43,70 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+}
+
+a {
+  text-shadow: 2px 2px var(--accent-color-pink);
+  text-decoration: none;
+}
+
+a:hover {
+  border-block-end: 1px solid var(--article-text-color);
+}
+
+h2 {
+  color: var(--h1-color-text);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 0.825em;
+  text-shadow: 2px 2px 0px var(--accent-color-pink);
+}
+
+.rec-label {
+  display: flex;
+  position: absolute;
+  top: var(--rec-top);
+  right: var(--rec-right);
+  align-items: center;
+  gap: 10px;
+}
+
+.rec-label::before {
+  content: "REC";
+  color: var(--accent-color-pink);
+}
+
+.rec-label::after {
+  display: block;
+  box-shadow: 0px 0px 4px 2px var(--accent-color-pink);
+  border-radius: 50%;
+  background-color: var(--accent-color-pink);
+  width: 9px;
+  height: 9px;
+  content: '';
+}
+
+.decorated-zone::after,
+.decorated-zone::before {
+  position: absolute;
+  border: 1px solid var(--accent-color-pink);
+  inline-size: 25px;
+  block-size: 25px;
+  content: '';
+}
+
+.decorated-zone::before {
+  top: var(--main-padding);
+  right: var(--main-padding);
+  border-bottom: none;
+  border-left: none;
+}
+
+.decorated-zone::after {
+  bottom: var(--main-padding);
+  left: var(--main-padding);
+  border-top: none;
+  border-right: none;
 }
