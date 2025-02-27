@@ -7,9 +7,9 @@
 }
 
 body {
+  margin: 0 auto;
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0 auto;
   font-weight: normal;
   font-size: var(--default-font-size);
   font-family: 'IBM Plex mono', sans-serif;
@@ -39,18 +39,18 @@ picture {
 
 button,
 a {
+  border: none;
+  background-color: transparent;
   color: currentColor;
-  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  background-color: transparent;
-  border: none;
+  font-family: inherit;
   text-transform: lowercase;
 }
 
 a {
-  text-shadow: 2px 2px var(--accent-color-pink);
   text-decoration: none;
+  text-shadow: 2px 2px var(--accent-color);
 }
 
 a:hover {
@@ -61,7 +61,7 @@ h2 {
   color: var(--h1-color-text);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.825em;
-  text-shadow: 2px 2px 0px var(--accent-color-pink);
+  text-shadow: 2px 2px 0px var(--accent-color);
 }
 
 .rec-label {
@@ -75,14 +75,14 @@ h2 {
 
 .rec-label::before {
   content: "REC";
-  color: var(--accent-color-pink);
+  color: var(--accent-color);
 }
 
 .rec-label::after {
   display: block;
-  box-shadow: 0px 0px 4px 2px var(--accent-color-pink);
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
   border-radius: 50%;
-  background-color: var(--accent-color-pink);
+  background-color: var(--accent-color);
   width: 9px;
   height: 9px;
   content: '';
@@ -91,7 +91,7 @@ h2 {
 .decorated-zone::after,
 .decorated-zone::before {
   position: absolute;
-  border: 1px solid var(--accent-color-pink);
+  border: 1px solid var(--accent-color);
   inline-size: 25px;
   block-size: 25px;
   content: '';

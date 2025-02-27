@@ -5,9 +5,13 @@
 :root {
   --cover-image: url(../images/cover-image-dark.png);
 
+  --max-device-height: 668px;
+
   --device-height: 668px;
   --default-font-size: 18px;
   --main-padding: 10px;
+
+  --menu-gap: 10px;
 
   --rec-top: 11px;
   --rec-right: 19px;
@@ -17,7 +21,7 @@
   --article-gap: 20px;
 
   --bg-color: #000028;
-  --accent-color-pink: #FF0070;
+  --accent-color: #FF0070;
   --h1-color-text: #DB00FF;
   --article-text-color: #F1B2CE;
 }
