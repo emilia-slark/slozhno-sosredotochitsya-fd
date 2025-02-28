@@ -35,10 +35,6 @@
   gap: var(--menu-gap);
 }
 
-.header__theme-menu-item:hover {
-  outline: 1px solid var(--accent-menu-color);
-}
-
 .header-title {
   justify-self: start;
   color: var(--h1-color-text);
@@ -49,6 +45,10 @@
 
 .header__theme-menu-button {
   padding: 1.5px 13px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-menu-color);
 }
 
 .header__theme-menu-button_active {
@@ -72,7 +72,7 @@
 
 .content-subtitle {
   margin-block-end: var(--subtitle-margin);
-  color: var(--subtitle-text-color);
+  color: var(--subtitle-section-color);
   font-size: var(--default-font-size);
 }
 
@@ -109,7 +109,8 @@
 }
 
 .grid-container .content__list {
-  gap: 20px;
+  gap: var(--grid-gap);
+
 }
 
 .advice-container {
@@ -181,7 +182,7 @@
   .hard {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    gap: var(--grid-gap);
   }
 
   .concentration .content-subtitle {
@@ -191,14 +192,14 @@
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    gap: var(--grid-gap);
   }
 
   .gallery ul {
     display: grid;
     grid-template-rows: 25vw auto 1fr;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: var(--grid-gap);
     margin-block: 20px 40px;
   
   }
@@ -282,14 +283,14 @@
     }
 
     .advice .content__list {
-      gap: 20px;
+      gap: var(--grid-gap);
     }
   
     .gallery ul {
       display: grid;
       grid-template-rows: 25.5vw auto 1fr;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: var(--grid-gap);
       margin-block: 20px 40px;
     }
   

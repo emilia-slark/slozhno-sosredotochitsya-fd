@@ -9,6 +9,7 @@
   --main-padding: 10px;
 
   --menu-gap: 10px;
+  --grid-gap: 20px;
 
   --rec-top: 11px;
   --rec-right: 19px;
@@ -25,4 +26,5 @@
   --article-text-color: #F1B2CE;
   --header-menu-color: #FF0070;
   --subtitle-text-color: #000028;
+  --subtitle-section-color: #FF0070;
 }

@@ -16,6 +16,7 @@
   --article-text-color: #353430;
   --header-menu-color: #353430;
   --subtitle-text-color: #353430;
+  --subtitle-section-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -26,6 +27,8 @@
     --h1-color-text: #FFC2E6;
     --article-text-color: #353430;
     --header-menu-color: #353430;
+    --subtitle-text-color: #353430;
+    --subtitle-section-color: #353430;
   }
 
   .theme-auto .rec-label {

@@ -15,6 +15,8 @@
   --h1-color-text: #DB00FF;
   --article-text-color: #F1B2CE;
   --header-menu-color: #FF0070;
+  --subtitle-text-color: #000028;
+  --subtitle-section-color: #FF0070;
 }
 
 .theme-dark .page {
