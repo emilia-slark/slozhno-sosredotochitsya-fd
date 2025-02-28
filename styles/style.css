@@ -26,13 +26,17 @@
 
 .header__theme-menu {
   justify-self: end;
-  color: var(--accent-color);
+  color: var(--header-menu-color);
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   gap: var(--menu-gap);
+}
+
+.header__theme-menu-item:hover {
+  outline: 1px solid var(--accent-menu-color);
 }
 
 .header-title {
@@ -48,7 +52,8 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-menu-color);
+  pointer-events: none;
 }
 
 .content {
@@ -56,18 +61,18 @@
   flex-direction: column;
   gap: var(--section-gap);
   padding: var(--main-padding);
-
 }
 
 .science {
   display: flex;
   flex-direction: column;
   gap: var(--article-gap);
+
 }
 
 .content-subtitle {
-  margin-block-end: 20px;
-  color: var(--accent-color);
+  margin-block-end: var(--subtitle-margin);
+  color: var(--subtitle-text-color);
   font-size: var(--default-font-size);
 }
 
@@ -85,7 +90,7 @@
 
 .title-decor {
   background-color: var(--accent-color);
-  color: var(--bg-color);
+  color: var(--subtitle-text-color);
   font-weight: bold;
   line-height: 130%;
 }
@@ -274,12 +279,6 @@
     .concentration .content__list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 10px;
     }
 
     .advice .content__list {

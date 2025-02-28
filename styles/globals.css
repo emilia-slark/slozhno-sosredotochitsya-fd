@@ -91,7 +91,7 @@ h2 {
 .decorated-zone::after,
 .decorated-zone::before {
   position: absolute;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--header-menu-color);
   inline-size: 25px;
   block-size: 25px;
   content: '';

@@ -3,11 +3,8 @@
   и их переопределение под различные устройства
 */
 :root {
-  --cover-image: url(../images/cover-image-dark.png);
-
   --max-device-height: 668px;
 
-  --device-height: 668px;
   --default-font-size: 18px;
   --main-padding: 10px;
 
@@ -19,9 +16,13 @@
   --header-margin: 30px;
   --section-gap: 50px;
   --article-gap: 20px;
+  --subtitle-margin: 20px;
 
+  --cover-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --accent-color: #FF0070;
   --h1-color-text: #DB00FF;
   --article-text-color: #F1B2CE;
+  --header-menu-color: #FF0070;
+  --subtitle-text-color: #000028;
 }
