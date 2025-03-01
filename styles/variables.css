@@ -10,6 +10,7 @@
 
   --menu-gap: 10px;
   --grid-gap: 20px;
+  --header-article-gap: 10px;
 
   --rec-top: 11px;
   --rec-right: 19px;
@@ -27,4 +28,10 @@
   --header-menu-color: #FF0070;
   --subtitle-text-color: #000028;
   --subtitle-section-color: #FF0070;
+
+  --gallery-grid-1: 1 / 1 / 2 / 3;
+  --gallery-grid-2: 1 / 3 / 3 / 4;
+  --gallery-grid-3: 2 / 1 / 4 / 2;
+  --gallery-grid-4: 2 / 2 / 3 / 3;
+  --gallery-grid-5: 3 / 2 / 4 / 4;
 }

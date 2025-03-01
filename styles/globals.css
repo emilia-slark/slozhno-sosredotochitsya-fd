@@ -48,13 +48,35 @@ a {
   text-transform: lowercase;
 }
 
+a:focus, button:focus {
+  outline: none;
+}
+
 a {
+  border: 1px solid transparent;
   text-decoration: none;
   text-shadow: 2px 2px var(--accent-color);
 }
 
 a:hover {
-  border-block-end: 1px solid var(--article-text-color);
+  border-block-end: 2px solid var(--article-text-color);
+}
+
+a:focus-visible {
+  border: 1px solid var(--article-text-color);
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 1.5px 13px;
+}
+
+button:hover {
+  border: 1px solid rgb(from var(--header-menu-color) R G B / 0.4);
+}
+
+button:focus-visible {
+  border-block-end: 1px solid var(--header-menu-color);
 }
 
 h2 {

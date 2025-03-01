@@ -6,7 +6,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-size: var(--default-font-size); 
+  font-size: var(--default-font-size);
   line-height: 130%;
 }
 
@@ -43,16 +43,8 @@
   text-shadow: 4px 4px 0px var(--accent-color);
 }
 
-.header__theme-menu-button {
-  padding: 1.5px 13px;
-}
-
-.header__theme-menu-button:hover {
-  border: 1px solid var(--accent-menu-color);
-}
-
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-menu-color);
+  border: 1px solid var(--header-menu-color);
   pointer-events: none;
 }
 
@@ -67,7 +59,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--article-gap);
-
 }
 
 .content-subtitle {
@@ -79,13 +70,13 @@
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--grid-gap);
 }
 
 .content__list-item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--header-article-gap);
 }
 
 .title-decor {
@@ -110,7 +101,6 @@
 
 .grid-container .content__list {
   gap: var(--grid-gap);
-
 }
 
 .advice-container {
@@ -131,7 +121,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  margin-block-start: 10px;
+  margin-block-start: var(--header-article-gap);
 }
 
 .gallery img {
@@ -150,23 +140,19 @@
   margin-block-start: 32px;
   padding: var(--main-padding);
   block-size: 100vh;
-  min-block-size: 668px;
+  min-block-size: var(--max-device-height);
 }
 
 /* ------------------------------------------------------------------------------------- */
 
 @media (width >= 768px) {
-
   :root {
     --main-padding: 20px;
-
     --rec-top: 21px;
     --rec-right: 29px;
-
     --header-margin: 40px;
     --article-gap: 80px;
     --section-gap: 80px;
-
     --max-device-height: 1024px;
   }
 
@@ -178,8 +164,9 @@
   .header .title-decor {
     inline-size: 50%;
   }
-  
-  .hard {
+
+  .hard,
+  .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: var(--grid-gap);
@@ -189,39 +176,28 @@
     inline-size: 30%;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--grid-gap);
-  }
-
   .gallery ul {
     display: grid;
-    grid-template-rows: 25vw auto 1fr;
+    grid-template-rows: 25.5vw auto 1fr;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--grid-gap);
     margin-block: 20px 40px;
-  
   }
 
   .gallery li:nth-child(1) {
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: var(--gallery-grid-1);
   }
-
   .gallery li:nth-child(2) {
-    grid-area: 1 / 3 / 3 / 4;
+    grid-area: var(--gallery-grid-2);
   }
-
   .gallery li:nth-child(3) {
-    grid-area: 2 / 1 / 4 / 2;
+    grid-area: var(--gallery-grid-3);
   }
-
   .gallery li:nth-child(4) {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: var(--gallery-grid-4);
   }
-
   .gallery li:nth-child(5) {
-    grid-area: 3 / 2 / 4 / 4;
+    grid-area: var(--gallery-grid-5);
   }
 
   .footer {
@@ -236,85 +212,35 @@
 /* ------------------------------------------------------------------------------------- */
 
 @media (width >= 1024px) {
-
   :root {
-    --main-padding: 20px;
-  
     --rec-top: 21px;
     --rec-right: 29px;
-  
-    --header-margin: 40px;
-    --article-gap: 80px;
-
     --max-device-height: 768px;
   }
 
-    .header__theme-menu {
-      align-self: start;
-      justify-self: center;
-    }
-
-    .header__theme-menu-list {
-      flex-direction: row;
-    }
-  
-    .header-title {
-      margin-left: calc(0px - var(--main-padding));
-      font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    }
-  
-    .header .title-decor {
-      inline-size: 50%;
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 10px;
-    }
-  
-    .oncentration .content-subtitle {
-      inline-size: 30%;
-    }
-
-    .concentration .content__list {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .advice .content__list {
-      gap: var(--grid-gap);
-    }
-  
-    .gallery ul {
-      display: grid;
-      grid-template-rows: 25.5vw auto 1fr;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--grid-gap);
-      margin-block: 20px 40px;
-    }
-  
-    .gallery li:nth-child(1) {
-      grid-area: 1 / 1 / 2 / 3;
-    }
-  
-    .gallery li:nth-child(2) {
-      grid-area: 1 / 3 / 3 / 4;
-    }
-  
-    .gallery li:nth-child(3) {
-      grid-area: 2 / 1 / 4 / 2;
-    }
-  
-    .gallery li:nth-child(4) {
-      grid-area: 2 / 2 / 3 / 3;
-    }
-  
-    .gallery li:nth-child(5) {
-      grid-area: 3 / 2 / 4 / 4;
-    }
-  
-    .footer h2 {
-      font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    }
+  .header__theme-menu {
+    align-self: start;
+    justify-self: center;
   }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header .title-decor {
+    inline-size: 50%;
+  }
+
+  .concentration .content-subtitle {
+    inline-size: 30%;
+  }
+
+  .concentration .content__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .advice .content__list {
+    gap: var(--grid-gap);
+  }
+}
