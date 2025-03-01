@@ -6,6 +6,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-color: var(--bg-color);
   font-size: var(--default-font-size);
   line-height: 130%;
 }
@@ -146,7 +147,7 @@ section.gallery {
   justify-content: center;
   align-items: center;
   padding: var(--main-padding);
-  block-size: 100vh;;
+  block-size: 100vh;
   min-block-size: var(--max-device-height);
 }
 
