@@ -68,7 +68,7 @@ a:focus-visible {
 
 button {
   border: 1px solid transparent;
-  padding: 1.5px 13px;
+  padding: 0.5px 13px;
 }
 
 button:hover {

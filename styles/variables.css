@@ -3,22 +3,22 @@
   и их переопределение под различные устройства
 */
 :root {
-  --max-device-height: 668px;
-
-  --default-font-size: 18px;
-  --main-padding: 10px;
-
-  --menu-gap: 10px;
-  --grid-gap: 20px;
-  --header-article-gap: 10px;
-
   --rec-top: 11px;
   --rec-right: 19px;
 
-  --header-margin: 30px;
-  --section-gap: 50px;
-  --article-gap: 20px;
-  --subtitle-margin: 20px;
+  --max-device-height: 668px;
+  --default-font-size: 18px;
+  --main-padding: 10px;
+
+  --menu-gap: 10px;               /* Для меню в шапке */
+  --content-margin: 30px;         /* Для основного контента */
+  --section-gap: 30px;            /* Между секций */
+  --header-section-gap: 20px;     /* Между Названием секции и самой секции */
+  --artice-gap: 20px;             /* Между статьями в секции */
+  --header-article-gap: 10px;     /* Между заголовком статьи и текстом */
+  --advice-gap: 18px;             /* Для двух заголовков в секции advice */
+  --gallery-gap: 10px;            /* Для галереи */
+  --special-grid-gap: 10px;
 
   --cover-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
